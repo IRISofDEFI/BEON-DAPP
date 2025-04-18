@@ -88,23 +88,48 @@ const Footer: React.FC = () => {
           {/* Bottom section with social and copyright */}
           <div className="pt-8 border-t border-beon-gray/30 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-500 mb-4 md:mb-0">
-              © 2023 BEON ∞. All rights reserved.
+              © 2024 BEON ∞. All rights reserved.
             </p>
 
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-beon-pink transition-colors">
+              <a 
+                href="https://x.com/Official_BEON" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-beon-pink transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-beon-pink transition-colors">
+              <a 
+                href="https://www.instagram.com/beon_infinity" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-beon-pink transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-beon-pink transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/beon-infinity" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-beon-pink transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-beon-pink transition-colors">
+              <a 
+                href="https://www.youtube.com/@beon_infinity" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-beon-pink transition-colors"
+              >
                 <Youtube className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-beon-pink transition-colors">
+              <a 
+                href="https://github.com/beon-infinity" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-beon-pink transition-colors"
+              >
                 <Github className="h-5 w-5" />
               </a>
             </div>
