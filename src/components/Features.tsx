@@ -1,7 +1,7 @@
 
 import React from "react";
 import { 
-  Shield, QrCode, FileCheck, Building2, History, ClockCountdown, Wallet, FileCode
+  Shield, QrCode, FileCheck, Building2, History, Clock, Wallet, FileCode
 } from "lucide-react";
 
 const Features: React.FC = () => {
@@ -27,7 +27,7 @@ const Features: React.FC = () => {
       description: "View the complete history of a product on-chain, from manufacturing to current ownership"
     },
     {
-      icon: <ClockCountdown />,
+      icon: <Clock />,
       title: "Expiration Verification",
       description: "Check if beauty products are expired or still safe to use with blockchain-verified dates"
     },

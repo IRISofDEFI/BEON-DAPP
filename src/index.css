@@ -98,7 +98,7 @@
 
   .glow-effect::before {
     content: "";
-    @apply absolute inset-0 rounded-inherit bg-gradient-to-r from-beon-purple to-beon-pink 
+    @apply absolute inset-0 rounded-xl bg-gradient-to-r from-beon-purple to-beon-pink 
            blur-xl opacity-50 -z-10 transition-opacity;
   }
 }
