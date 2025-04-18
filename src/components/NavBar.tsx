@@ -17,20 +17,22 @@ const NavBar: React.FC = () => {
   }, []);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "py-3 bg-beon-black/90 backdrop-blur-md shadow-lg"
-          : "py-6 bg-transparent"
-      }`}
-    >
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled
+        ? "py-3 bg-beon-black/90 backdrop-blur-md shadow-lg"
+        : "py-6 bg-transparent"
+    }`}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/112a7d8d-a461-4b53-a933-28b85febd93e.png" 
-            alt="BEON ∞ Logo" 
-            className="h-12 w-auto"
-          />
+          <div className="h-12 w-12 rounded-full bg-gradient-to-r from-beon-purple to-beon-pink p-0.5">
+            <div className="h-full w-full rounded-full bg-beon-black flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/112a7d8d-a461-4b53-a933-28b85febd93e.png" 
+                alt="BEON ∞ Logo" 
+                className="h-8 w-8"
+              />
+            </div>
+          </div>
           <span className="font-heading font-bold text-2xl ml-2 bg-clip-text text-transparent bg-gradient-to-r from-beon-purple to-beon-pink">
             BEON ∞
           </span>

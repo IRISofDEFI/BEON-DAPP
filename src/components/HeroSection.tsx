@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Infinity } from "lucide-react";
+import { ArrowRight, Infinity, ShieldCheck, UserCheck, Sparkles } from "lucide-react";
 
 const HeroSection: React.FC = () => {
   return (
@@ -19,10 +19,10 @@ const HeroSection: React.FC = () => {
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-beon-purple to-beon-pink">
-                Beauty
+                Trust
               </span>{" "}
               <span className="relative inline-block">
-                Verified
+                Your Beauty
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-beon-purple to-beon-pink"></div>
               </span>{" "}
               <br />
@@ -33,16 +33,17 @@ const HeroSection: React.FC = () => {
             </h1>
             
             <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-xl">
-              The Web3 authentication platform ensuring your beauty products are genuine,
-              traceable, and transparent—powered by blockchain technology.
+              The first Web3-powered beauty authentication platform ensuring your products are genuine, traceable, and rewarding—powered by blockchain technology and NFTs.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button size="lg" className="bg-gradient-to-r from-beon-purple to-beon-pink text-white hover:shadow-[0_0_20px_rgba(249,28,180,0.4)]">
-                Try Demo dApp
+                <ShieldCheck className="mr-2 h-5 w-5" />
+                Verify Product
               </Button>
               <Button size="lg" variant="outline" className="border-beon-pink text-white group">
-                Learn How It Works
+                <UserCheck className="mr-2 h-5 w-5" />
+                Brand Registration
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -65,9 +66,9 @@ const HeroSection: React.FC = () => {
         {/* Stats cards */}
         <div className="w-full max-w-5xl mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
+            { label: "Brands Protected", value: "50+" },
             { label: "Products Verified", value: "150K+" },
-            { label: "Brands Registered", value: "50+" },
-            { label: "Counterfeits Prevented", value: "98%" }
+            { label: "User Satisfaction", value: "98%" }
           ].map((stat, index) => (
             <div key={index} className="glass-panel p-6 text-center">
               <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-beon-purple to-beon-pink mb-2">
