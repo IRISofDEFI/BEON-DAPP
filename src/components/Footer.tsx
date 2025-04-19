@@ -1,10 +1,17 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FileText, Instagram, Send, X } from "lucide-react";
 
 const Footer: React.FC = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  
+  const getSectionLink = (sectionId: string) => {
+    return isHomePage ? `#${sectionId}` : `/#${sectionId}`;
+  };
+
   return (
     <footer className="bg-beon-black border-t border-beon-gray/30 pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -42,8 +49,8 @@ const Footer: React.FC = () => {
             <div>
               <h4 className="text-lg font-bold mb-4">Platform</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-sm text-gray-400 hover:text-beon-pink transition-colors">How It Works</a></li>
-                <li><a href="#" className="text-sm text-gray-400 hover:text-beon-pink transition-colors">Features</a></li>
+                <li><a href={getSectionLink("how-it-works")} className="text-sm text-gray-400 hover:text-beon-pink transition-colors">How It Works</a></li>
+                <li><a href={getSectionLink("features")} className="text-sm text-gray-400 hover:text-beon-pink transition-colors">Features</a></li>
                 <li><a href="#" className="text-sm text-gray-400 hover:text-beon-pink transition-colors">Brands</a></li>
                 <li><a href="#" className="text-sm text-gray-400 hover:text-beon-pink transition-colors">Pricing</a></li>
               </ul>

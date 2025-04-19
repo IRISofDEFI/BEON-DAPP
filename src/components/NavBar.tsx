@@ -2,11 +2,20 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  
+  // Check if we're on the homepage
+  const isHomePage = location.pathname === "/";
+  
+  // Function to create the correct links
+  const getSectionLink = (sectionId: string) => {
+    return isHomePage ? `#${sectionId}` : `/#${sectionId}`;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,16 +50,16 @@ const NavBar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#how-it-works" className="text-sm font-medium hover:text-beon-pink transition-colors">
+          <a href={getSectionLink("how-it-works")} className="text-sm font-medium hover:text-beon-pink transition-colors">
             How It Works
           </a>
-          <a href="#features" className="text-sm font-medium hover:text-beon-pink transition-colors">
+          <a href={getSectionLink("features")} className="text-sm font-medium hover:text-beon-pink transition-colors">
             Features
           </a>
-          <a href="#roadmap" className="text-sm font-medium hover:text-beon-pink transition-colors">
+          <a href={getSectionLink("roadmap")} className="text-sm font-medium hover:text-beon-pink transition-colors">
             Roadmap
           </a>
-          <a href="#faq" className="text-sm font-medium hover:text-beon-pink transition-colors">
+          <a href={getSectionLink("faq")} className="text-sm font-medium hover:text-beon-pink transition-colors">
             FAQ
           </a>
           <Link to="/whitepaper" className="text-sm font-medium hover:text-beon-pink transition-colors">
@@ -80,28 +89,28 @@ const NavBar: React.FC = () => {
         <div className="md:hidden bg-beon-black/95 backdrop-blur-md py-4 border-y border-beon-gray animate-accordion-down">
           <div className="container mx-auto flex flex-col space-y-4">
             <a 
-              href="#how-it-works" 
+              href={getSectionLink("how-it-works")}
               className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               How It Works
             </a>
             <a 
-              href="#features" 
+              href={getSectionLink("features")}
               className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Features
             </a>
             <a 
-              href="#roadmap" 
+              href={getSectionLink("roadmap")}
               className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Roadmap
             </a>
             <a 
-              href="#faq" 
+              href={getSectionLink("faq")}
               className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
