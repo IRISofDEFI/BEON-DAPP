@@ -1,7 +1,7 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { FileText, Instagram, Send, X } from "lucide-react";
-import { Icon } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
-                <Icon name="smartphone" className="h-5 w-5" />
+                <Send className="h-5 w-5 rotate-90" />
               </a>
             </div>
           </div>
