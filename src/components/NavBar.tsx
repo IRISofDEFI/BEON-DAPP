@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const NavBar: React.FC = () => {
         : "py-6 bg-transparent"
     }`}>
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <div className="h-12 w-12 rounded-full bg-gradient-to-r from-beon-purple to-beon-pink p-0.5">
             <div className="h-full w-full rounded-full bg-beon-black flex items-center justify-center">
               <img 
@@ -36,7 +37,7 @@ const NavBar: React.FC = () => {
           <span className="font-heading font-bold text-2xl ml-2 bg-clip-text text-transparent bg-gradient-to-r from-beon-purple to-beon-pink">
             BEON ∞
           </span>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
@@ -52,6 +53,9 @@ const NavBar: React.FC = () => {
           <a href="#faq" className="text-sm font-medium hover:text-beon-pink transition-colors">
             FAQ
           </a>
+          <Link to="/whitepaper" className="text-sm font-medium hover:text-beon-pink transition-colors">
+            Whitepaper
+          </Link>
           <Button className="bg-gradient-to-r from-beon-purple to-beon-pink text-white hover:shadow-[0_0_15px_rgba(249,28,180,0.5)] flex items-center gap-2">
             <Wallet size={16} />
             <span>Connect Wallet</span>
@@ -103,6 +107,13 @@ const NavBar: React.FC = () => {
             >
               FAQ
             </a>
+            <Link
+              to="/whitepaper"
+              className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Whitepaper
+            </Link>
             <Button className="bg-gradient-to-r from-beon-purple to-beon-pink text-white flex items-center gap-2 w-full justify-center">
               <Wallet size={16} />
               <span>Connect Wallet</span>

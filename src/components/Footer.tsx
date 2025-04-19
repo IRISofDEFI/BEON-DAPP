@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -66,7 +67,6 @@ const Footer: React.FC = () => {
                     Documentation
                   </a>
                 </li>
-                <li><a href="#" className="text-sm text-gray-400 hover:text-beon-pink transition-colors">Whitepaper</a></li>
                 <li><a href="#" className="text-sm text-gray-400 hover:text-beon-pink transition-colors">API Reference</a></li>
                 <li><a href="#" className="text-sm text-gray-400 hover:text-beon-pink transition-colors">Smart Contracts</a></li>
               </ul>
