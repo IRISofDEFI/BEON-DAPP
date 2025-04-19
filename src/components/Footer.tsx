@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { FileText, Github, Instagram, Linkedin, Send, Telegram, Tiktok, Twitter, Youtube } from "lucide-react";
+import { FileText, Github, Instagram, Linkedin, Send, X, Youtube } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
-                <Twitter className="h-5 w-5" />
+                <X className="h-5 w-5" />
               </a>
               <a 
                 href="https://linkr.it/2jpCU7" 
@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
-                <Telegram className="h-5 w-5" />
+                <Send className="h-5 w-5" />
               </a>
               <a 
                 href="https://linkr.it/1lpaKr" 
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
-                <Tiktok className="h-5 w-5" />
+                <Github className="h-5 w-5" />
               </a>
               <a 
                 href="https://www.linkedin.com/company/beon-infinity" 
