@@ -1,14 +1,12 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { FileText, Github, Instagram, Linkedin, Send, Twitter, Youtube } from "lucide-react";
+import { FileText, Github, Instagram, Linkedin, Send, Telegram, Tiktok, Twitter, Youtube } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-beon-black border-t border-beon-gray/30 pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Top section with logo and newsletter */}
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div className="flex items-center mb-8 md:mb-0">
               <img 
@@ -38,7 +36,6 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Middle section with links */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
               <h4 className="text-lg font-bold mb-4">Platform</h4>
@@ -85,7 +82,6 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Bottom section with social and copyright */}
           <div className="pt-8 border-t border-beon-gray/30 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-500 mb-4 md:mb-0">
               © 2024 BEON ∞. All rights reserved.
@@ -101,12 +97,28 @@ const Footer: React.FC = () => {
                 <Twitter className="h-5 w-5" />
               </a>
               <a 
-                href="https://www.instagram.com/beon_infinity" 
+                href="https://linkr.it/2jpCU7" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
                 <Instagram className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://t.me/BEON001" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-beon-pink transition-colors"
+              >
+                <Telegram className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://linkr.it/1lpaKr" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-beon-pink transition-colors"
+              >
+                <Tiktok className="h-5 w-5" />
               </a>
               <a 
                 href="https://www.linkedin.com/company/beon-infinity" 
