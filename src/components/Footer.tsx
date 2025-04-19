@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { FileText, Github, Instagram, Linkedin, Send, X, Youtube } from "lucide-react";
+import { FileText, Instagram, Send, X } from "lucide-react";
+import { Icon } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -113,36 +114,12 @@ const Footer: React.FC = () => {
                 <Send className="h-5 w-5" />
               </a>
               <a 
-                href="https://linkr.it/1lpaKr" 
+                href="https://www.tiktok.com/@beonchain?_t=ZM-8vfBCDQ582H&_r=1" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
-                <Github className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/beon-infinity" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-beon-pink transition-colors"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://www.youtube.com/@beon_infinity" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-beon-pink transition-colors"
-              >
-                <Youtube className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://github.com/beon-infinity" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-beon-pink transition-colors"
-              >
-                <Github className="h-5 w-5" />
+                <Icon name="smartphone" className="h-5 w-5" />
               </a>
             </div>
           </div>
