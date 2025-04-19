@@ -1,5 +1,5 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FileText, Instagram, Send, X } from "lucide-react";
 
@@ -51,6 +51,15 @@ const Footer: React.FC = () => {
             <div>
               <h4 className="text-lg font-bold mb-4">Resources</h4>
               <ul className="space-y-2">
+                <li>
+                  <Link 
+                    to="/whitepaper" 
+                    className="text-sm text-gray-400 hover:text-beon-pink transition-colors flex items-center gap-1"
+                  >
+                    <FileText className="h-4 w-4" />
+                    Whitepaper
+                  </Link>
+                </li>
                 <li>
                   <a href="#" className="text-sm text-gray-400 hover:text-beon-pink transition-colors flex items-center gap-1">
                     <FileText className="h-4 w-4" />
