@@ -3,15 +3,17 @@ import React, { useState, useEffect } from "react";
 import { Menu, X, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import { useToast } from "@/hooks/use-toast";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  
+  const { toast } = useToast();
+
   // Check if we're on the homepage
   const isHomePage = location.pathname === "/";
-  
+
   // Function to create the correct links
   const getSectionLink = (sectionId: string) => {
     return isHomePage ? `#${sectionId}` : `/#${sectionId}`;
@@ -25,6 +27,13 @@ const NavBar: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleComingSoon = () => {
+    toast({
+      title: "Coming soon",
+      description: "This feature will be available soon!",
+    });
+  };
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -65,7 +74,9 @@ const NavBar: React.FC = () => {
           <Link to="/whitepaper" className="text-sm font-medium hover:text-beon-pink transition-colors">
             Whitepaper
           </Link>
-          <Button className="bg-gradient-to-r from-beon-purple to-beon-pink text-white hover:shadow-[0_0_15px_rgba(249,28,180,0.5)] flex items-center gap-2">
+          <Button className="bg-gradient-to-r from-beon-purple to-beon-pink text-white hover:shadow-[0_0_15px_rgba(249,28,180,0.5)] flex items-center gap-2"
+            onClick={handleComingSoon}
+          >
             <Wallet size={16} />
             <span>Connect Wallet</span>
           </Button>
@@ -73,9 +84,9 @@ const NavBar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
-          <Button 
-            variant="outline" 
-            size="icon" 
+          <Button
+            variant="outline"
+            size="icon"
             className="border-beon-pink text-beon-pink"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -123,7 +134,9 @@ const NavBar: React.FC = () => {
             >
               Whitepaper
             </Link>
-            <Button className="bg-gradient-to-r from-beon-purple to-beon-pink text-white flex items-center gap-2 w-full justify-center">
+            <Button className="bg-gradient-to-r from-beon-purple to-beon-pink text-white flex items-center gap-2 w-full justify-center"
+              onClick={handleComingSoon}
+            >
               <Wallet size={16} />
               <span>Connect Wallet</span>
             </Button>
@@ -135,3 +148,4 @@ const NavBar: React.FC = () => {
 };
 
 export default NavBar;
+

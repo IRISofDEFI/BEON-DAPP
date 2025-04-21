@@ -2,8 +2,18 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { QrCode, Sparkles } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const CtaSection: React.FC = () => {
+  const { toast } = useToast();
+
+  const handleComingSoon = () => {
+    toast({
+      title: "Coming soon",
+      description: "This feature will be available soon!",
+    });
+  };
+
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background gradient */}
@@ -25,11 +35,20 @@ const CtaSection: React.FC = () => {
                 through blockchain technology. Scan, verify, and own with confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <Button size="lg" className="bg-gradient-to-r from-beon-purple to-beon-pink text-white hover:shadow-[0_0_20px_rgba(249,28,180,0.4)] flex items-center gap-2">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-beon-purple to-beon-pink text-white hover:shadow-[0_0_20px_rgba(249,28,180,0.4)] flex items-center gap-2"
+                  onClick={handleComingSoon}
+                >
                   <Sparkles className="h-5 w-5" />
                   Try Demo dApp
                 </Button>
-                <Button size="lg" variant="outline" className="border-beon-pink text-white flex items-center gap-2">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-beon-pink text-white flex items-center gap-2"
+                  onClick={handleComingSoon}
+                >
                   <QrCode className="h-5 w-5" />
                   Scan Sample QR
                 </Button>
@@ -58,3 +77,4 @@ const CtaSection: React.FC = () => {
 };
 
 export default CtaSection;
+
