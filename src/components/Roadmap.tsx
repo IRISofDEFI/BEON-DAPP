@@ -6,7 +6,7 @@ const Roadmap: React.FC = () => {
   const phases = [
     {
       title: "Phase 1: Foundation",
-      quarter: "Q1 2023",
+      quarter: "Q1 2025",
       completed: true,
       milestones: [
         "Platform architecture development",
@@ -17,7 +17,7 @@ const Roadmap: React.FC = () => {
     },
     {
       title: "Phase 2: Beta Launch",
-      quarter: "Q2-Q3 2023",
+      quarter: "Q2-Q3 2025",
       completed: true,
       milestones: [
         "Closed beta testing with select brands",
@@ -28,7 +28,7 @@ const Roadmap: React.FC = () => {
     },
     {
       title: "Phase 3: Market Entry",
-      quarter: "Q4 2023 - Q1 2024",
+      quarter: "Q4 2025 - Q1 2026",
       completed: false,
       milestones: [
         "Public platform launch",
@@ -39,7 +39,7 @@ const Roadmap: React.FC = () => {
     },
     {
       title: "Phase 4: Ecosystem Expansion",
-      quarter: "Q2-Q4 2024",
+      quarter: "Q2-Q4 2026",
       completed: false,
       milestones: [
         "Advanced analytics for brands",
@@ -50,7 +50,7 @@ const Roadmap: React.FC = () => {
     },
     {
       title: "Phase 5: Industry Integration",
-      quarter: "2025 and beyond",
+      quarter: "2027 and beyond",
       completed: false,
       milestones: [
         "Industry standard certification",
@@ -130,3 +130,4 @@ const Roadmap: React.FC = () => {
 };
 
 export default Roadmap;
+
