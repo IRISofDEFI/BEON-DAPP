@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+
+import React from "react";
 import { 
   Accordion, 
   AccordionContent, 
@@ -18,7 +19,7 @@ const FaqSection: React.FC = () => {
     },
     {
       question: "Do I need cryptocurrency to use BEON ∞?",
-      answer: "For basic product verification, no cryptocurrency is required. However, to receive and store NFT receipts of your verified products, you'll need a Web3 wallet. Our platform covers the gas fees for NFT minting to ensure a seamless user experience."
+      answer: "Not at all. Anyone can scan and verify a product — no wallet, no crypto, no hassle. Want to unlock bonus features like owning a digital certificate (NFT) of your verified product? Then you'll need a Web3 wallet — and don’t worry, we cover all gas fees for you. It’s completely seamless."
     },
     {
       question: "How can brands join the BEON ∞ platform?",
@@ -76,3 +77,4 @@ const FaqSection: React.FC = () => {
 };
 
 export default FaqSection;
+
