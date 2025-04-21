@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { 
   Accordion, 
@@ -35,7 +34,7 @@ const FaqSection: React.FC = () => {
     },
     {
       question: "Which blockchains does BEON ∞ support?",
-      answer: "BEON ∞ currently operates on Ethereum and Polygon blockchains, with plans to expand to additional EVM-compatible networks to ensure scalability, sustainability, and wide wallet compatibility."
+      answer: "Currently, BEYOND operates on the Ethereum network, specifically using the Sepolia testnet. We are planning to expand to support Solana, Polygon, BNB Chain, and other EVM-compatible networks to ensure scalability, sustainability, and broad wallet compatibility."
     }
   ];
 
