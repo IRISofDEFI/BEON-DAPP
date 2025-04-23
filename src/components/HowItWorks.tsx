@@ -36,7 +36,7 @@ const HowItWorks: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="section-title text-center mx-auto">
-            How BEON ∞ Works
+            How BEON∞ Works
           </h2>
           <p className="mt-6 text-center text-gray-300 max-w-2xl mx-auto mb-16">
             Our platform leverages blockchain technology to create a seamless

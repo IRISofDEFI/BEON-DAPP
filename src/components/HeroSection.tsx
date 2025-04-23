@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-beon-purple/20 rounded-full filter blur-[120px]"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-beon-pink/20 rounded-full filter blur-[100px]"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 flex flex-col items-center">
         {/* Main content */}
         <div className="w-full max-w-5xl flex flex-col md:flex-row gap-8 md:gap-12 items-center">
@@ -31,11 +31,11 @@ const HeroSection: React.FC = () => {
                 <Infinity className="text-beon-pink animate-pulse-gentle" size={48} />
               </span>
             </h1>
-            
+
             <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-xl">
               The global standard for beauty product authenticity, empowering customers, brands, and regulators with blockchain-verified trust and transparency.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button size="lg" className="bg-gradient-to-r from-beon-purple to-beon-pink text-white hover:shadow-[0_0_20px_rgba(249,28,180,0.4)]">
                 <ShieldCheck className="mr-2 h-5 w-5" />
@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Right image */}
           <div className="flex-1 relative">
             <div className="relative glass-panel p-4 rounded-2xl animate-float shadow-2xl">
@@ -82,9 +82,9 @@ const HeroSection: React.FC = () => {
         {/* Stats cards */}
         <div className="w-full max-w-5xl mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { label: "Global Brands Protected", value: "50+" },
-            { label: "Products Verified", value: "150K+" },
-            { label: "Counterfeits Prevented", value: "$5M+" }
+            { label: "Global Brands Protected", value: "Coming Soon" },
+            { label: "Products Verified", value: "🧪 Pilot Phase" },
+            { label: "Counterfeits Prevented", value: "🔒 In Progress" }
           ].map((stat, index) => (
             <div key={index} className="glass-panel p-6 text-center">
               <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-beon-purple to-beon-pink mb-2">

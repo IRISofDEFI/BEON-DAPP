@@ -36,24 +36,29 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled
-        ? "py-3 bg-beon-black/90 backdrop-blur-md shadow-lg"
-        : "py-6 bg-transparent"
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+      ? "py-3 bg-beon-black/90 backdrop-blur-md shadow-lg"
+      : "py-6 bg-transparent"
+      }`}>
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <div className="h-12 w-12 rounded-full bg-gradient-to-r from-beon-purple to-beon-pink p-0.5">
             <div className="h-full w-full rounded-full bg-beon-black flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/112a7d8d-a461-4b53-a933-28b85febd93e.png" 
-                alt="BEON ∞ Logo" 
-                className="h-8 w-8"
+              <img
+                src="/lovable-uploads/112a7d8d-a461-4b53-a933-28b85febd93e.png"
+                alt="BEON Logo"
+                style={{
+                  borderRadius: "50%",
+                  width: "48px",
+                  height: "48px",
+                  objectFit: "cover"
+                }}
               />
+
             </div>
           </div>
           <span className="font-heading font-bold text-2xl ml-2 bg-clip-text text-transparent bg-gradient-to-r from-beon-purple to-beon-pink">
-            BEON ∞
+            BEON∞
           </span>
         </Link>
 
@@ -99,28 +104,28 @@ const NavBar: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-beon-black/95 backdrop-blur-md py-4 border-y border-beon-gray animate-accordion-down">
           <div className="container mx-auto flex flex-col space-y-4">
-            <a 
+            <a
               href={getSectionLink("how-it-works")}
               className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               How It Works
             </a>
-            <a 
+            <a
               href={getSectionLink("features")}
               className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Features
             </a>
-            <a 
+            <a
               href={getSectionLink("roadmap")}
               className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Roadmap
             </a>
-            <a 
+            <a
               href={getSectionLink("faq")}
               className="text-sm font-medium hover:text-beon-pink transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}

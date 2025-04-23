@@ -7,7 +7,7 @@ import { FileText, Instagram, Send, X } from "lucide-react";
 const Footer: React.FC = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-  
+
   const getSectionLink = (sectionId: string) => {
     return isHomePage ? `#${sectionId}` : `/#${sectionId}`;
   };
@@ -18,11 +18,12 @@ const Footer: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div className="flex items-center mb-8 md:mb-0">
-              <img 
-                src="/lovable-uploads/112a7d8d-a461-4b53-a933-28b85febd93e.png" 
-                alt="BEON ∞ Logo" 
-                className="h-12 w-auto"
+              <img
+                src="/lovable-uploads/112a7d8d-a461-4b53-a933-28b85febd93e.png"
+                alt="BEON ∞ Logo"
+                className="h-12 w-12 rounded-full object-cover"
               />
+
               <span className="font-heading font-bold text-2xl ml-2 bg-clip-text text-transparent bg-gradient-to-r from-beon-purple to-beon-pink">
                 BEON ∞
               </span>
@@ -60,8 +61,8 @@ const Footer: React.FC = () => {
               <h4 className="text-lg font-bold mb-4">Resources</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link 
-                    to="/whitepaper" 
+                  <Link
+                    to="/whitepaper"
                     className="text-sm text-gray-400 hover:text-beon-pink transition-colors flex items-center gap-1"
                   >
                     <FileText className="h-4 w-4" />
@@ -105,34 +106,34 @@ const Footer: React.FC = () => {
             </p>
 
             <div className="flex space-x-4">
-              <a 
-                href="https://x.com/Official_BEON" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://x.com/Official_BEON"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
                 <X className="h-5 w-5" />
               </a>
-              <a 
-                href="https://linkr.it/2jpCU7" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://linkr.it/2jpCU7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a 
-                href="https://t.me/BEON001" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://t.me/BEON001"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
                 <Send className="h-5 w-5" />
               </a>
-              <a 
-                href="https://www.tiktok.com/@beonchain?_t=ZM-8vfBCDQ582H&_r=1" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.tiktok.com/@beonchain?_t=ZM-8vfBCDQ582H&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-beon-pink transition-colors"
               >
                 <Send className="h-5 w-5 rotate-90" />
