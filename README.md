@@ -11,6 +11,11 @@
 - 📲 **No-Code Brand Onboarding** – Simple interface for traditional beauty brands to enter Web3.
 - 🔒 **Secure QR Codes** – Unique QR codes are generated and linked to blockchain records for verification.
 
+## 🚀 Live Project
+
+🌐 **Live Site**: [https://beonn.xyz](https://beonn.xyz)
+
+
 ## 🛠️ Getting Started
 
 1. **Clone the repository**
