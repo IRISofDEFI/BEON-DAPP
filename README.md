@@ -1,6 +1,6 @@
 # 🌸 BeonDapp ∞ — Web3 Beauty Product Authentication
 
-**BeonDapp** is a blockchain-powered platform for authenticating and verifying beauty and cosmetic products in real-time. With a focus on transparency, trust, and traceability, BeonDapp empowers brands and consumers by preventing counterfeits and ensuring product authenticity from source to shelf. Currently building frontend.
+**BeonDapp** is a blockchain-powered platform for authenticating and verifying beauty and cosmetic products in real-time. With a focus on transparency, trust, and traceability, BeonDapp empowers brands and consumers by preventing counterfeits and ensuring product authenticity from source to shelf.
 
 ## ✨ Key Features
 
