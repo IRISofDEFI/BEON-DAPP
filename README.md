@@ -10,6 +10,7 @@
 - 📬 **Email Subscriptions** – Users can subscribe to product launches, updates, and brand releases securely.
 - 📲 **No-Code Brand Onboarding** – Simple interface for traditional beauty brands to enter Web3.
 - 🔒 **Secure QR Codes** – Unique QR codes are generated and linked to blockchain records for verification.
+-  **NEW FEAUTURE OF A BOLT LIKE APP MAKEUP BOOKING APP**
 
 ## 🚀 Live Project
 
