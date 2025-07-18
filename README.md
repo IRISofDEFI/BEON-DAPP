@@ -24,3 +24,5 @@
 ```bash
 git clone https://github.com/IRISofDEFI/beondapp.git
 cd beondapp
+npm install
+npm run dev
